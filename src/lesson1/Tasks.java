@@ -1,10 +1,11 @@
 package lesson1;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Tasks {
 
-	public Tasks(){
+	public Tasks() throws IOException{
 		
 		//First Task
 		

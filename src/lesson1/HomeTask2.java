@@ -1,9 +1,10 @@
 package lesson1;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 class HomeTask2 {
-	protected HomeTask2(){
+	protected HomeTask2() throws IOException{
 		String name;
 		int age;	
 		Scanner scan = new Scanner(System.in);
