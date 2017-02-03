@@ -6,7 +6,7 @@ public class HomeTasks {
 	
 	public static void main(String ... args) throws IOException{
 		
-		int executeTask = 4;
+		int executeTask = 3;
 		HomeTask1 task1;
 		HomeTask2 task2;
 		HomeTask3 task3;
