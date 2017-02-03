@@ -1,40 +1,31 @@
 package lesson1;
 
-public class HomeTask3 {
-
+class HomeTask3 {
+	int year;
 	
-	public HomeTask3() {
-		int year = 2500;
-		if(leapYear(year)){
+	protected HomeTask3() {
+		//year for example
+		this.year = 2000;
+		print(leapYear(year));
+	}
+	
+	protected HomeTask3(int year){
+		this.year = year;
+		print(leapYear(year));
+	}
+
+	private void print(boolean isLeap){
+		if(isLeap){
 			System.out.print(year);
 			System.out.println(" is Leap Year.");
 		}else{
 			System.out.print(year);
 			System.out.println(" is't Leap Year.");
 		}
-		
 	}
-
-	static boolean leapYear(int year){
-		/*if (year % 4 != 0) {
-
-			return false;
-
-			} else if (year % 100 == 0) {
-
-			return false;
-
-			} else if (year % 400 == 0) {
-
-			return true;
-
-			} else {
-
-			return true;
-			
-			}*/
-		
-		
+	
+	public boolean leapYear(int year){
+				
 		if ((year % 4 == 0) && (!(year % 100 == 0) || (year % 400 == 0) )){
 			return true;
 		} else {

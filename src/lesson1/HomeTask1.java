@@ -4,9 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class HomeTask1 {
+class HomeTask1 {
 	
-	public HomeTask1() throws IOException{
+	protected HomeTask1() throws IOException{
 		//Create BufferedReader instance for input from console
 				BufferedReader bufRead = new BufferedReader(new InputStreamReader(System.in));
 				System.out.print("Enter the radius: ");
@@ -20,7 +20,7 @@ public class HomeTask1 {
 				System.out.println(perimeter);
 				
 				//Calculate the Square
-				double sqr = (Math.PI*radius*radius)/4;
+				double sqr = (Math.PI*radius*radius)/4.0d;
 				System.out.print("Square is: ");
 				System.out.println(sqr);
 	}
