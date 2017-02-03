@@ -34,6 +34,7 @@ public class HomeTasks {
 			task1 = new HomeTask1();
 			task2 = new HomeTask2();
 			task3 = new HomeTask3();
+			task4 = new HomeTask4();
 		}
 		
 		}
