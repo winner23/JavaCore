@@ -5,7 +5,7 @@ class HomeTask3 {
 	
 	protected HomeTask3() {
 		//year for example
-		this.year = 20;
+		this.year = 2017;
 		print(leapYear(year));
 	}
 	
