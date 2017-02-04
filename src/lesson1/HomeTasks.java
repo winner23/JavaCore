@@ -11,11 +11,7 @@ public class HomeTasks {
 		HomeTask2 task2;
 		HomeTask3 task3;
 		HomeTask4 task4;
-		int a=0;
-		float b=0;
-		float c = a/b;
-		Number a1 = new Integer(1);
-		a=a1.intValue();
+		
 		
 		switch (executeTask){
 		case 1:{
