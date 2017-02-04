@@ -6,7 +6,8 @@ public class HomeTasks {
 	
 	public static void main(String ... args) throws IOException{
 		
-		int executeTask = 3;
+		int executeTask = 0;
+		Tasks classTasks;
 		HomeTask1 task1;
 		HomeTask2 task2;
 		HomeTask3 task3;
@@ -14,6 +15,10 @@ public class HomeTasks {
 		
 		
 		switch (executeTask){
+		case 0:{
+			classTasks = new Tasks();
+			break;
+		}
 		case 1:{
 			task1 = new HomeTask1();
 			break;
