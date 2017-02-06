@@ -20,6 +20,9 @@ public class Student {
 		sum += rating;
 	}
 	
+	public Student(){
+		number++;
+	}
 	public Student(String name){
 		this.name = name;
 		number++;
@@ -31,11 +34,11 @@ public class Student {
 		this.name = name;
 		this.rating = rating;
 	}
-	double getAvgRaiting(){
+	static double getAvgRating(){
 		return (double) sum/number;
 	}
 	
-	void changeRaiting(int rating){
+	void changeRating(int rating){
 		sum -= this.rating;
 		this.rating = rating;
 		sum += rating;
