@@ -1,8 +1,12 @@
 package lesson3.exapmle;
 
 public class Main {
+	/*
+	 * Class created 06.02.2017 
+	 * for testing Example class
+	 */
 	public static void main(String ... args){
-		
+		//Entry point for Example
 		Student student1 = new Student("Oleg");
 		student1.setRating(4);
 		Student student2 = new Student("Anna");
