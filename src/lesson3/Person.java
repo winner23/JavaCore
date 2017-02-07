@@ -1,4 +1,4 @@
-package lesson3.practic;
+package lesson3;
 
 import java.time.DateTimeException;
 import java.util.Calendar;
