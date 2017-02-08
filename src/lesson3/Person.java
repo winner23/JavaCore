@@ -19,8 +19,7 @@ public class Person {
 	}
 	
 	public Person() {
-		this.name="UnknownName";
-		this.birthYear = getYear();
+		input();
 		
 	}
 	
@@ -52,7 +51,7 @@ public class Person {
 	}
 	
 		
-	//Task methods
+	//Methods of tasks
 	
 	public int age(){
 		return getYear() - getBirthYear();
