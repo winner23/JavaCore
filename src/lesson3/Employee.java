@@ -74,13 +74,21 @@ public class Employee {
 		this.rate = rate;
 	}
 	
+	public double bonuses(){
+		
+		return salary() * 0.2;
+	}
 	public double bonuses(double bonus){
-		return salary() * bonus;
+		if (bonus<1){
+			return salary() * bonus;
+		}
+		System.out.println("Incorect bonus!");
+		return salary();
 	}
 	
 	@Override
 	public String toString() {
-		return "[Name: "+getName()+", rate: "+getRate()+", hours: "+getHours()+"]";
+		return "[Name: "+getName()+", rate: "+getRate()+", hours: "+getHours()+"],[Salery:"+salary()+" , Bonuses:"+bonuses()+"]";
 	}
 	
 	//Service methods
@@ -102,16 +110,21 @@ public class Employee {
 		Employee employee3 = null;
 		try{
 			employee2 = new Employee("Alex", 10.0);
-			employee3 = new Employee("Pavel", 15.0, 10);
+			employee3 = new Employee("Pavel", 15.0, 22);
+			
+			employee1.setName("Bill");
+			employee1.setHours(20);
+			employee1.setRate(17.5d);
+			
+			employee2.setHours(23);
 		} catch (Exception e) {
 			System.out.println("Incorrect making object:"+e.getMessage());
 		}
-		employee1.setHours(5);
-		employee1.setRate(7.5d);
-		
-		employee2.setHours(12);
 		
 		System.out.println("Total hours of all workers: "+Employee.totalHours);
+		System.out.println(employee1);
+		System.out.println(employee2);
+		System.out.println(employee3);
 		
 	}
 
