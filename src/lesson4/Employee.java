@@ -8,9 +8,7 @@ public class Employee {
 	private String name;
 	private Departments departmentName=null;
 	private int salery;
-	
-	
-	
+		
 	public enum Departments {
 		Management, Financial, Controling, IT, RnD, Marketing, Production
 	}
@@ -31,6 +29,11 @@ public class Employee {
 
 	void setDepartmentName(Departments departmentName) {
 		this.departmentName = departmentName;
+	}
+	
+	void setDepartmentName(String departmentName) {
+		
+		this.departmentName = findDepartmentName(departmentName);
 	}
 
 	int getSalery() {
@@ -86,31 +89,27 @@ public class Employee {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter data for new employee");
 		System.out.print("Name: ");
-		name = scan.next();
-		
+		setName(scan.next());
 		System.out.print("Enter the name of deparment ");
 		System.out.print(Arrays.toString(Departments.values())+ "\n:");
 		do{
-			departmentName = findDepartmentName(scan.next());
-		}while(departmentName == null);
-		
+			setDepartmentName(findDepartmentName(scan.next()));
+		}while(getDepartmentName() == null);
 		System.out.print("Salery: ");
-		salery = scan.nextInt();	
-		
-		
+		setSalery(scan.nextInt());	
 	}
-		
-		
-	
 	
 	public static Employee hiring(){
 		
 		Employee result = new Employee();
 		result.inputData();
-		
 		return result;
 	}
 	
-	
+	@Override
+	public String toString(){
+		return "Name:"+getName()+ " (Department:"+getDepartmentName()+" ), Salary: "+getSalery();
+		
+	}
 
 }

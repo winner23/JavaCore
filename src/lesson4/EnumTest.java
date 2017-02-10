@@ -7,12 +7,9 @@ public class EnumTest {
 	};
 	Continents  continent;
 	
-	
-	
 	public Continents getContinent(String city){
 		
 		switch (city){
-		
 		case "Australia":{
 			continent = Continents.Australia;
 			break;
@@ -45,6 +42,7 @@ public class EnumTest {
 		return continent;
 		
 	}
+	
 	
 	public static void main(String [] args){
 		EnumTest test = new EnumTest();
