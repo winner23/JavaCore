@@ -28,7 +28,6 @@ public class Employees {
 		
 		for (int i=0; i<employees.length; i++){
 			employees[i] = Employee.hiring();
-			
 		}
 		
 		for(Employee employee: employees){
@@ -37,7 +36,6 @@ public class Employees {
 		
 		System.out.println("Sort ascending order:");
 		employees = org.sort(true, employees);
-		
 		
 		for(Employee employee: employees){
 			System.out.println(employee);

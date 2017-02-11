@@ -8,13 +8,16 @@ public class Employee {
 	private String name;
 	private Departments departmentName=null;
 	private int salery;
+	
+	Scanner scan = new Scanner(System.in);
 		
 	public enum Departments {
 		Management, Financial, Controling, IT, RnD, Marketing, Production
 	}
-	
+	//Constructor realized by method hiring()
 	private Employee(){}
 	
+	//Getters and Setters
 	String getName() {
 		return name;
 	}
@@ -43,7 +46,7 @@ public class Employee {
 	void setSalery(int salery) {
 		this.salery = salery;
 	}
-	
+	//Parsing name of department
 	private Departments findDepartmentName(String strDepartmentName){
 		
 		Departments result;
@@ -84,9 +87,8 @@ public class Employee {
 		return result;
 	}
 		
-		
+	//Enter data manually 	
 	private void inputData(){
-		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter data for new employee");
 		System.out.print("Name: ");
 		setName(scan.next());
@@ -100,7 +102,6 @@ public class Employee {
 	}
 	
 	public static Employee hiring(){
-		
 		Employee result = new Employee();
 		result.inputData();
 		return result;
@@ -108,8 +109,6 @@ public class Employee {
 	
 	@Override
 	public String toString(){
-		return "Name:"+getName()+ " (Department:"+getDepartmentName()+" ), Salary: "+getSalery();
-		
+		return "Name:"+getName()+ " (Department:"+getDepartmentName()+" ), Salary: "+getSalery();	
 	}
-
 }
