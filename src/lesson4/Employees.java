@@ -2,16 +2,16 @@ package lesson4;
 
 public class Employees {
 
-	private Employee[] sort(boolean ascending, Employee employees[]){
+	private Employee[] sort(boolean ascendingOrder, Employee employees[]){
 		Employee tmp = null;
 		Employee res[] = employees;
 		for (int i=0; i<res.length-1; i++){
 			for (int j=i+1; j<res.length;j++){
-				if((ascending)&&(res[i].getSalery()>res[j].getSalery())){
+				if((ascendingOrder)&&(res[i].getSalery()>res[j].getSalery())){
 					tmp = res[j];
 					res[j] = res[i];
 					res[i] = tmp;
-				}else if((!ascending)&&(res[i].getSalery()<res[j].getSalery())){
+				}else if((!ascendingOrder)&&(res[i].getSalery()<res[j].getSalery())){
 					tmp = res[j];
 					res[j] = res[i];
 					res[i] = tmp;
