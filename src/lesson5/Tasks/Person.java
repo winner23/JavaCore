@@ -1,4 +1,4 @@
-package lesson5;
+package lesson5.Tasks;
 
 public abstract class Person {
 	private String name;

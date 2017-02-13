@@ -1,6 +1,6 @@
-package lesson5;
+package lesson5.Tasks;
 
-import lesson5.interfaces.Animal;
+import lesson5.Tasks.interfaces.Animal;
 
 public class Dog implements Animal{
 

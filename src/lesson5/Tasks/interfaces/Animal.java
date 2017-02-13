@@ -1,6 +1,4 @@
-package lesson5.interfaces;
-
-import lesson5.interfaces.Animal.Type;
+package lesson5.Tasks.interfaces;
 
 public interface Animal {
 	boolean voice();
