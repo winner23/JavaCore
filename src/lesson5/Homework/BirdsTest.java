@@ -8,7 +8,7 @@ public class BirdsTest {
 	public static void main(String [] args){
 		birds[0] = new Eagle(Sex.male, "white head");
 		birds[1] = new Swallow(Sex.female,"white and black");
-		birds[2] = new Penguin(Sex.male, "wings are fins");
+		birds[2] = new Penguin(Sex.female, "wings are fins");
 		birds[3] = new Chicken(Sex.male, "bright feathers");
 		
 		for(Bird bird:birds){
