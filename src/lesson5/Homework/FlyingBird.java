@@ -9,6 +9,7 @@ public class FlyingBird extends Bird {
 
 	@Override
 	public boolean fly() {
+		System.out.print("and can fly");
 		return true;
 	}
 

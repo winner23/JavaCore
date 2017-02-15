@@ -1,6 +1,5 @@
 package lesson5.Homework;
 
-import lesson5.Homework.Bird.Sex;
 
 public abstract class Bird {
 	private String feathers;
@@ -19,11 +18,21 @@ public abstract class Bird {
 		this.setFeathers(feathers);
 	}
 	
+	@Override
+	public String toString(){
+		String className = this.getClass().getName();
+		String [] classPath = className.split("\\.");
+		if (classPath.length<1) {
+			return null;
+		} else {
+			return "This "+ classPath[classPath.length-1]+(canLayEggs()?" can lay eggs":" can't lay eggs");
+		}
+		
+	}
 
 	protected boolean canLayEggs(){
 		return layEggs;
 	}
-	
 	protected void itLayEggs(boolean layEggs){
 		this.layEggs = layEggs;
 	}
