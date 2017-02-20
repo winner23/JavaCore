@@ -42,5 +42,7 @@ class Homework {
 		}
 		System.out.println("Trimmed string: "+trimInside);
 		
+		//Third task
+		
 	}
 }
