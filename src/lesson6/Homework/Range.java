@@ -7,7 +7,7 @@ public class Range {
 	private Scanner scanner = new Scanner(System.in);
 	
 	public int readNumber(int start, int end) throws IllegalArgumentException, NumberFormatException{
-		
+		System.out.print("Enter numbers in range("+start+";"+end+"):");
 		int result = scanner.nextInt();
 		if (result<end&&result>start){
 			return result;
@@ -18,6 +18,7 @@ public class Range {
 	
 	public static void main(String []args){
 		Range range = new Range();
+		
 		int start = 1;
 		int end = 100;
 		for(int i=0; i<10; i++){
