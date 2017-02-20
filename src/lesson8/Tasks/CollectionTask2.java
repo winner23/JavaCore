@@ -63,7 +63,5 @@ public class CollectionTask2 {
 		System.out.println("Enter value:");
 		str = scanner.next();
 		task.findID(str, employeeMap);
-		
-		
 	}
 }
