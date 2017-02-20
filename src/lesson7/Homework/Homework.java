@@ -31,7 +31,7 @@ class Homework {
 	//Find all baks
 	private String regexFind(String string){
 		
-		String result=null;
+		String result="";
 		Pattern pattern = Pattern.compile("\\$(\\d*)(\\.\\d{2})?");
 		Matcher matcher = pattern.matcher(string);
 		while(matcher.find()){
