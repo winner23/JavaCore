@@ -21,10 +21,6 @@ public class TreadT1  {
 		
 		System.out.println("My name is Volodya");
 		
-		
-		
 	}
-	
-	
-	
+	 
 }

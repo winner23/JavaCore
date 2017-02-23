@@ -14,6 +14,6 @@ public class Study implements Runnable {
 			}
 		}
 
-	}
+	} 
 
 }
