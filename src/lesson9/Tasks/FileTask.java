@@ -16,7 +16,7 @@ public class FileTask {
 	public static void main(String[] args) {
 
 		List<String> lines;
-		File file = new File("c:\\Develop\\Projects\\workspace\\HomeTask1\\data\\mytext.txt");
+		File file = new File("..\\HomeTask1\\data\\mytext.txt");
 		
 		lines = new ArrayList<String>();
 		try(BufferedReader buff = new BufferedReader( new InputStreamReader(new FileInputStream(file)))){			
@@ -51,6 +51,7 @@ public class FileTask {
 		
 		System.out.println("The longest line : " + lines.get(imax-1));
 		System.out.println("The shortest line : " + lines.get(imin-1));
+		System.out.println("Lines that include substring \"var\": ");
 		
 		for(String line:lines){
 			if(line.contains("var")){
